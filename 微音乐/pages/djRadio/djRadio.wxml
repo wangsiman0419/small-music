@@ -1,0 +1,13 @@
+<!--pages/dj-more/dj-more.wxml-->
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+<view class="top">流行榜</view>
+<view class="album-box">
+        <view class="album" wx:for="{{djRadios}}" wx:key="item.id" 
+        bind:tap="handlePlay" data-id="{{item.id}}" data-name="{{item.rcmdtext}}">
+        <image class="play" src="{{isPlay && prevId==item.id?'/images/暂停.png':'/images/播放.png'}}"></image>
+            <image src="{{item.picUrl}}" ></image>
+            <text class="title">{{item.rcmdtext}}</text> 
+            <text class="name">{{item.dj.nickname}}</text>
+        </view>
+    </view>
+   

@@ -1,0 +1,38 @@
+<!--pages/music-list/music-list.wxml-->
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+<view class="top-box">
+    <view class="pic">
+        <image class="bg" src="{{playlist.coverImgUrl}}"></image>
+    </view>
+    <view class="top">
+        <view class="title">
+            <image class="logo" src="/images/music-list.png"></image>
+            <text class="name">{{playlist.name}}</text>
+        </view>
+        <view class="label">
+            <text>标签： <text class="tags">{{playlist.tags}}</text></text>
+        </view>
+        <text class="description">介绍：{{playlist.description}}</text>
+    </view> 
+</view>
+<view class="list-box">
+    <view>歌曲列表</view>
+        <view class="title-list">
+            <text class="num"></text>
+            <text class="music-title">歌曲标题</text>
+            <text class="singer">歌手</text>
+            <text class="time">时长</text>
+        </view>
+        <view class="list" wx:for="{{playlist.tracks}}" wx:key="item.id"
+        data-poster="{{item.al.picUrl}}" bind:tap="handlePlay" data-id="{{item.id}}" 
+        data-name="{{item.name}}" data-author="{{item.ar[0].name}}">
+        <view class="{{index%2==0?'active':''}}">
+            <text class="num-title times">{{index+1}}</text>
+            <text class="head-title head">{{tools.formats(item.name)}}</text>
+            <text class="head-singer head">{{tools.formats(item.ar[0].name)}}</text>
+            <text class="times-title times">{{tools.formatTime(item.dt)}}</text>
+            <image class="play-icon" 
+            src="{{isPlay && playId==item.id?'/images/stop.png':'/images/play.png'}}"></image>
+        </view>
+    </view>
+</view>

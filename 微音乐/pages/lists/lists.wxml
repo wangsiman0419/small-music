@@ -1,0 +1,46 @@
+<view class='productNav'>
+    <!-- 左侧 -->
+    <view class='left'>
+      <view class="{{active==0?'selected':'normal'}}" id="0" bindtap='switchNav'>华语</view>
+      <view class="{{active==1?'selected':'normal'}}" id="1" bindtap='switchNav'>欧美</view>
+      <view class="{{active==2?'selected':'normal'}}" id="2" bindtap='switchNav'>日语</view>
+      <view class="{{active==3?'selected':'normal'}}" id="3" bindtap='switchNav'>韩语</view>
+      <view class="{{active==4?'selected':'normal'}}" id="4" bindtap='switchNav'>粤语</view>
+    </view>
+    <!-- 右侧 -->
+    <view class='right'>
+      <view class='type'>
+        <!-- current:当前所在滑块的 index -->
+        <!-- vertical:滑动方向是否为纵向 -->
+        <swiper current='{{currentTab}}' vertical='{{false}}'>
+          <!-- catchtouchmove 阻止弹窗后滚动穿透 -->
+          <swiper-item id="0" catchtouchmove="false">
+              <view class="box">
+                  <v-cat  wx:for="{{playlists}}" wx:key="{{item}}" data="{{item}}"></v-cat>
+              </view>
+          </swiper-item>
+          <swiper-item id="1" catchtouchmove="false">
+                <view class="box">
+                    <v-cat  wx:for="{{playlists}}" wx:key="{{item}}" data="{{item}}"></v-cat>
+                </view>
+          </swiper-item>
+          <swiper-item id="2" catchtouchmove="false">
+                <view class="box">
+                    <v-cat  wx:for="{{playlists}}" wx:key="{{item}}" data="{{item}}"></v-cat>
+                </view>
+          </swiper-item>
+          <swiper-item id="3" catchtouchmove="false">
+                <view class="box">
+                    <v-cat  wx:for="{{playlists}}" wx:key="{{item}}" data="{{item}}"></v-cat>
+                </view>
+          </swiper-item>
+          <swiper-item id="4" catchtouchmove="false">
+                <view class="box">
+                    <v-cat  wx:for="{{playlists}}" wx:key="{{item}}" data="{{item}}"></v-cat>
+                </view>
+          </swiper-item>
+        </swiper> 
+      </view>
+    </view>
+  </view>
+ 

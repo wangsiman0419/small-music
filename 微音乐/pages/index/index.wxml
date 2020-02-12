@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <image src="{{logo}}" bind:tap="handleClick"></image>
+  <view>{{name}}</view>
+  <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGetUserInfo">获取用户信息</button>
+</view>

@@ -1,0 +1,27 @@
+<!--pages/singerSongs/singerSongs.wxml-->
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+<view class="top">
+    <image class="bg" src="{{pic}}"></image>
+    <text class="name">{{name}}</text>
+</view>
+<view class="list-box">
+    <view>歌曲列表</view>
+        <view class="title-list">
+            <text class="num"></text>
+            <text class="music-title">热门作品</text>
+            <text class="time">时长</text>
+            <text class="singer">专辑</text>
+        </view>
+        <view class="list" wx:for="{{songs}}" wx:key="item.id"
+        data-poster="{{item.al.picUrl}}" bind:tap="handlePlay" data-id="{{item.id}}" 
+        data-name="{{item.name}}" data-author="{{item.ar[0].name}}">
+        <view class="{{index%2==0?'active':''}}">
+            <text class="num-title times">{{index+1}}</text>
+            <image class="play-icon" 
+            src="{{isPlay && playId==item.id?'/images/stop.png':'/images/play.png'}}"></image>
+            <text class="head-title head">{{tools.formats(item.name)}}</text>
+            <text class="times-title times">{{tools.formatTime(item.dt)}}</text>
+            <text class="head-singer head">{{tools.formats(item.al.name)}}</text>
+        </view>
+    </view>
+</view>

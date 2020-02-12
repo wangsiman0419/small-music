@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/home",
+    "pages/music/music",
+    "pages/my/my",
+    "pages/mv/mv",
+    "pages/mv-detail/mv-detail",
+    "pages/dish/dish",
+    "pages/dish-more/dish-more",
+    "pages/djRadio/djRadio",
+    "pages/programs/programs",
+    "pages/toplist/toplist",
+    "pages/lists/lists",
+    "pages/music-list/music-list",
+    "pages/music-play/music-play",
+    "pages/search/search",
+    "pages/singerSongs/singerSongs",
+    "pages/singerMore/singerMore"
+  ],
+  "requiredBackgroundModes": ["audio", "location"],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#c20c0c",
+    "navigationBarTitleText": "WeMusic",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/music/music",
+      "text": "推荐",
+      "iconPath": "/images/list.png",
+      "selectedIconPath": "/images/list-a.png"
+    },{
+      "pagePath": "pages/lists/lists",
+      "text": "歌单",
+      "iconPath": "/images/lists.png",
+      "selectedIconPath": "/images/lists-a.png"
+    },{
+      "pagePath": "pages/mv/mv",
+      "text": "mv",
+      "iconPath": "/images/mv.png",
+      "selectedIconPath": "/images/mv-a.png"
+    },{
+      "pagePath": "pages/my/my",
+      "text": "我",
+      "iconPath": "/images/personal.png",
+      "selectedIconPath": "/images/personal-a.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

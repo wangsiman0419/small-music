@@ -1,0 +1,18 @@
+<!--pages/mv/mv.wxml-->
+<van-tabs active="{{ active }}">
+    <van-tab title="最新">
+        <div class="list">
+            <v-mv wx:for="{{data}}" wx:key="item.id" data="{{item}}"></v-mv>
+        </div>   
+    </van-tab>
+    <van-tab title="推荐">
+        <div class="list">
+            <v-mv wx:for="{{datas}}" wx:key="item.id" data="{{item}}"></v-mv>
+        </div>  
+    </van-tab>
+    <van-tab title="精品">
+        <div class="list">
+            <v-mv wx:for="{{rank}}" wx:key="item.id" data="{{item}}"></v-mv>
+        </div> 
+    </van-tab>
+</van-tabs>

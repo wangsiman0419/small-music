@@ -1,0 +1,8 @@
+<!--pages/home/home.wxml-->
+<view class="container">
+    <image class="bg" src="/images/logo.jpeg"></image>
+    <view class="title">"那些听着听着就笑了的音乐"</view>
+    <view class="author">--by 微音乐</view>
+    <button bind:tap="handleTab">开启我的音乐之旅</button>
+</view>
+

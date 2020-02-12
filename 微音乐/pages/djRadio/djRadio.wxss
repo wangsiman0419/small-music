@@ -1,0 +1,57 @@
+/* pages/toplist/toplist.wxss */
+.album-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.album{
+    width: 220rpx;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 20rpx 0;
+}
+.album image{
+    width: 220rpx;
+    height: 200rpx;
+    /* opacity: 0.8; */
+}
+.album text{
+    font-size: 25rpx;
+}
+.album .play{
+    width: 80rpx;
+    height:80rpx;
+    position: absolute;
+    top: 54rpx;
+    left: 70rpx;
+}
+.album .name{
+    position: absolute;
+    top: 150rpx;
+    left: 0rpx;
+    color: #333;
+    width: 210rpx;
+    height: 50rpx;
+    display: inline-block;
+    background: rgb(221, 221, 221);
+    opacity: 0.8;
+    padding-left: 10rpx;
+    font-weight: bold;
+    font-size: 28rpx;
+    line-height: 50rpx;
+}
+.top{
+    font-size: 50rpx;
+    color: #c20c0c;
+    font-weight: bold;
+    text-align: center;
+}
+.playcount{
+    font-size: 28rpx;
+    color: rgb(107, 107, 107);
+    margin-top: 15rpx;
+}
+.title{
+    margin-top: 10rpx;
+}

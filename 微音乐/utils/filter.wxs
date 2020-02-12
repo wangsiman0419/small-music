@@ -1,0 +1,58 @@
+function format(value){
+    if(value){
+        if(value.length>13){
+            value=value.slice(0,13)+"..."
+        }
+        return value
+    }
+}
+function formats(value){
+    if(value){
+        if(value.length>6){
+            value=value.slice(0,6)+"..."
+        }
+        return value
+    }
+}
+function Format(value){
+    if(value){
+        if(value.length>9){
+            value=value.slice(0,9)+"..."
+        }
+        return value
+    }
+}
+function playcount(sum){
+    if(sum){
+        if(sum>10000){
+            sum=Math.floor(sum/1000)/10+"万"
+        }else{
+            sum=sum;
+        }
+        return sum
+    }
+}
+function formatTime(time,min,sec){
+    if(time){
+        if(time/1000/60<=10){
+            min="0"+Math.floor(time/1000/60)
+        }else{
+            min=Math.floor(time/1000/60)
+        }
+    
+        if(time/1000%60<=10){
+            sec="0"+Math.round(time/1000%60)
+        }else{
+            sec=Math.floor(time/1000%60)
+        }
+        return min+":"+sec
+    }
+   
+}
+module.exports={
+    format:format,
+    Format:Format,
+    formats:formats,
+    playcount:playcount,
+    formatTime:formatTime
+} 

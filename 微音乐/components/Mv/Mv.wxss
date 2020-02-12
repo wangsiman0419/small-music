@@ -1,0 +1,26 @@
+/* components/Mv/Mv.wxss */
+.list{
+    width: 200rpx;
+    margin-top: 10px;
+    position: relative;
+}
+.list image{
+    width: 200rpx;
+    height: 200rpx;
+    border-radius: 30rpx;
+}
+.list text,.name{
+    width: 220rpx;
+    font-size: 30rpx;
+}
+.playcount{
+   position: absolute;
+   top: 10rpx;
+   right: 10rpx;
+   color: #fff;
+   font-size: 30rpx;
+}
+.playcount .icon{
+    width: 30rpx;
+    height: 30rpx;
+}

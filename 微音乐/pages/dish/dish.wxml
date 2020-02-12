@@ -1,0 +1,35 @@
+<!--pages/music-detail/music-detail.wxml-->
+<view class="container" wx:for="{{music}}" wx:key="{{item}}">
+    <view class="item">
+      <view class="top">
+          <view class="left">
+              <image src="{{item.blurPicUrl}}"></image>
+          </view>
+          <view class="right">
+              <view class="album">
+                  <text class="title">专辑</text>
+                  <image src="/images/三角形 (1).png"></image>
+                  <text class="name">{{item.name}}</text>
+              </view>
+              <text >歌手：{{item.artist.name}}</text>
+              <text>发行时间：2019-09-20</text>
+              <text>发行公司： {{item.company}}</text>
+          </view>    
+      </view>
+      <view class="buttons">
+            <button class="play">
+                <image class="play-img" src="{{isPlay?'/images/暂停.png':'/images/播放.png'}}"  bind:tap="handlePlay"></image>
+                <text class="play-text">播放</text>
+            </button>
+            <button><image class="buttons-img" src="/images/转发.png"></image><text class="buttons-text">({{item.info.shareCount}})</text></button>
+            <button><image class="buttons-img" src="/images/短信.png"></image><text class="buttons-text">({{item.info.commentCount}})</text></button>
+      </view> 
+      <view class="foot">
+          <text>
+              专辑介绍：
+          </text>
+          <text class="description">{{item.description}}</text>
+      </view>
+    </view>
+  </view>
+  

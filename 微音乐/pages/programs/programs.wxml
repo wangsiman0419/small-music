@@ -1,0 +1,11 @@
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+<view class="top">推荐榜</view>
+<view class="album-box">
+        <view class="album" wx:for="{{programs}}" wx:key="item.id" 
+        bind:tap="handlePlay" data-id="{{item.mainSong.id}}" data-name="{{item.mainSong.name}}">
+        <image class="play" src="{{isPlay && prevId==item.mainSong.id?'/images/暂停.png':'/images/播放.png'}}"></image>
+            <image src="{{item.dj.avatarUrl}}" ></image>
+            <text class="title">{{item.mainSong.name}}</text> 
+            <text class="name">{{item.mainSong.artists[0].name}}</text>
+        </view>
+    </view>

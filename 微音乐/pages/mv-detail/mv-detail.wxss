@@ -1,0 +1,79 @@
+/* pages/mv-detail/mv-detail.wxss */
+video{
+    width: 100%;
+}
+.more-list{
+    display: flex;
+    border: 1px solid rgb(235, 233, 233);
+    margin: 20rpx 0;
+    padding: 20rpx 10rpx;
+}
+.more-list image{
+    width: 120rpx;
+    height:120rpx;
+    border-radius: 50%;
+}
+.more-list .content{
+    width: 500rpx;
+    font-size: 35rpx;
+    margin-left: 30rpx;
+}
+.title{
+    font-size:45rpx;
+    font-weight: bold;
+    margin: 30rpx 0;
+}
+.name{
+    font-size: 50rpx;
+    text-align: center;
+    margin-bottom: 20rpx;
+    color: rgb(54, 95, 206);
+}
+.num{
+    text-align: center;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+}
+.nickname{
+    color: #999;
+    margin-bottom: 10rpx;
+}
+.scroll{
+    white-space: nowrap;
+    margin-bottom:30rpx;
+    color: #333;
+    font-size: 35rpx;
+}
+.scroll .mv-list{
+    display: inline-block;
+    margin-right: 20rpx;
+    position: relative;
+}
+.pic{
+    width:250rpx;
+    height: 270rpx;
+}
+.mv-icon{
+    width: 65rpx;
+    height: 45rpx;
+}
+.playcount{
+    color: #999;
+    font-size: 25rpx;
+}
+.play{
+    position: absolute;
+    width: 100rpx;
+    height: 100rpx;
+    top: 105rpx;
+    left: 85rpx;
+}
+.author-up{
+    width: 250rpx;
+    white-space: wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

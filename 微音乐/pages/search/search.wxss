@@ -1,0 +1,94 @@
+/* pages/search/search.wxss */
+.name{
+    display: inline-block;
+    background: #F7F7F7;
+    padding:0 10px 10px 15px;
+    color: #929292;
+    margin-right: 20rpx;
+    margin-top:30rpx ;
+    font-size: 33rpx;
+    line-height: 30rpx;
+}
+.block{
+    height: 35rpx;
+    width: 9rpx;
+    background: black;
+    display: inline-block;
+    margin-right: 20rpx;
+}
+
+.title-list{
+    height: 80rpx;
+    width: 100%;
+    background: #F5F5F5;
+    color: rgb(65, 64, 64);
+    font-size: 32rpx;
+    border-bottom:2px solid rgb(212, 212, 212);
+}
+.title-list .num{
+    display: inline-block;
+    width: 80rpx;
+    line-height: 40rpx;
+}
+.title-list .music-title{
+    display: inline-block;
+    width: 240rpx;
+    height: 80rpx;
+    border-left: 1px solid rgb(209, 209, 209);
+    border-right: 1px solid rgb(209, 209, 209);
+    line-height:80rpx;
+    padding-left: 10rpx;
+}
+.singer{
+    display: inline-block;
+    width: 240rpx;
+    height: 80rpx;
+    line-height:80rpx;
+    padding-left: 10rpx;
+    border-right: 1px solid rgb(209, 209, 209);
+}
+.time{
+    border-left: 1px solid rgb(209, 209, 209);
+    padding-left: 10rpx;
+}
+.times{
+   color: rgb(44, 43, 43);
+}
+.num-title{
+    width: 80rpx;
+    padding-left: 10rpx;
+    display: inline-block;
+}
+.head-title{
+    display: inline-block;
+    width: 240rpx;
+    margin-left: 100rpx;
+}
+.head-singer{
+    display: inline-block;
+    width: 240rpx;
+    padding-left: 10rpx;
+}
+.list{
+    font-size: 28rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    position: relative;
+}
+.times-title{
+    display: inline-block;
+    margin-left: 10rpx;
+}
+.play-icon{
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    top: 15rpx;
+    left: 30rpx;
+}
+.active{
+    background: rgb(240, 240, 240);
+}
+.content{
+    padding-left: 5px;
+}

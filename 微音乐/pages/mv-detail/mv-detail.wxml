@@ -1,0 +1,32 @@
+<!--pages/mv-detail/mv-detail.wxml-->
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+<video src="{{url}}" autoplay> 
+</video> 
+<view class="name">{{name}}</view>
+<view class="title">更多视频</view>
+<scroll-view  scroll-x="{{x}}" class="scroll">
+    <view wx:for="{{mvs}}" wx:key="{{item.id}}" class="mv-list">
+        <view>
+            <image src="{{item.cover}}" class="pic"></image>
+        </view>
+        <view class="author-up">上传者:{{item.name}}</view>
+        <view class="playcount">
+            <image class="mv-icon" src="/images/mv02.png"></image>
+            {{tools.playcount(item.playCount)}}
+        </view>
+        <image class="play" bind:tap="handleClick" data-name="{{item.name}}"
+         data-id="{{item.id}}" src="/images/播放.png"></image>
+    </view>
+</scroll-view>
+<view>
+   <text class="title">精彩评论</text>
+   <view class="more" wx:for="{{comments}}" wx:key="{{item.id}}">
+       <view class="more-list">
+            <image src="{{item.user.avatarUrl}}"></image>
+            <view class="detail">
+                <text class="nickname">{{item.user.nickname}}</text>
+                <text class="content">{{item.content}}</text>
+            </view>
+       </view>
+   </view>
+</view>

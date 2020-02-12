@@ -1,0 +1,12 @@
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+<view class="top">节目榜</view>
+<view class="album-box">
+        <view class="album" wx:for="{{toplist}}" wx:key="item.id" 
+        bind:tap="handlePlay" data-id="{{item.program.mainSong.id}}" data-name="{{item.program.mainSong.name}}">
+            <image src="{{item.program.dj.avatarUrl}}" ></image>
+            <image class="play" src="{{isPlay && prevId==item.program.mainSong.id?'/images/暂停.png':'/images/播放.png'}}"></image>
+            <text class="title">《{{tools.format(item.program.mainSong.name)}}》</text> 
+            <text class="name">{{tools.formats(item.program.radio.name)}}</text>
+            <text class="playcount">播放量：{{tools.playcount(item.program.listenerCount)}}</text>
+        </view>
+    </view>

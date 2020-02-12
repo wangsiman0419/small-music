@@ -1,0 +1,112 @@
+
+.top{
+    height: 240rpx;
+    position: relative;
+    padding-top: 50rpx;
+}
+.top view{
+    display: flex;
+}
+.left{
+    height: 350rpx;
+    width: 350rpx;
+    position: absolute;
+    left: 0;
+}
+.left image{
+    height: 350rpx;
+    width: 305rpx;
+}
+.right{
+    width: 417rpx;
+    position: absolute;
+    right: 0;
+    top: 70rpx;
+    display: flex;
+    flex-direction: column;
+    font-size: 35rpx;
+    margin-left: 20rpx;
+}
+.right view{
+    display: flex;
+}
+
+.album{
+    padding-bottom: 30rpx;
+}
+.album image {
+    width: 30rpx;
+    height: 50rpx;
+}
+.title{
+    display: inline-block;
+    width: 100rpx;
+    line-height: 50rpx;
+    text-align: center;
+    color: #fff;
+    background: #CC1515;
+    font-size: 30rpx;
+}
+.name{
+    font-size: 35rpx;
+    padding-left: 10rpx;
+    width: 200rpx;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.buttons image{
+    width: 50rpx;
+    height: 50rpx;
+}
+.play-img{
+    position: absolute;
+    left: 50rpx;
+    top: 23rpx;
+}
+.play{
+    background: #3787D2;
+}
+.count{
+    width: 50rpx;
+    margin-left: -220rpx;
+}
+.button-play{
+    margin-left: -215rpx;
+    margin-top: 30rpx;
+    position: relative;
+    padding: 0;
+}
+.play-text{
+    color: #fff;
+    font-size: 40rpx;
+}
+.buttons button:not(:first-child){
+    width: 180rpx;
+    height: 80rpx;
+    padding-bottom: 30rpx;
+    position: relative;
+    background: #d1cfcf;
+    margin: 0 20rpx;
+}
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 150rpx;
+}
+.buttons-img{
+    position: absolute;
+    left: 20rpx;
+    top: 27rpx;
+}
+.buttons-text{
+    font-size: 30rpx;
+    position: absolute;
+    left: 77rpx;
+    top:27rpx;
+}
+.description{
+    color: #666666;
+    font-size: 30rpx;
+}

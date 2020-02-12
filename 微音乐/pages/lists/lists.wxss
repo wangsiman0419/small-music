@@ -1,0 +1,43 @@
+.productNav{
+    display: flex;
+    flex-direction: row;
+    font-family: "Microsoft YaHei"
+  }
+  .left{
+    width: 25%;
+    height: 470rpx;
+    font-size: 30rpx;
+    background-color: #f4f4f4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 101;
+  }
+  .left view{
+    text-align: center;
+    height: 90rpx;
+    line-height: 90rpx;
+  }
+  .selected{
+    background-color: #fff;
+    border-left: 2px solid #E54847;
+    font-weight: bold;
+    color: #E54847;
+  }
+  .normal{
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .right{
+    width:75%;
+    margin: 0 0 0 200rpx;
+    height: 2200rpx;
+  }
+  swiper{
+    height: 2200px;
+  }
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

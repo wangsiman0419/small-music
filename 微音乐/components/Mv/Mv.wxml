@@ -1,0 +1,13 @@
+<!--components/Mv/Mv.wxml-->
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+<view class="list" bind:tap="handleClick">
+    <image src="{{data.cover}}" alt=""></image>
+    <text>{{tools.format(data.name)}}</text>
+    <view class="name">作者:{{data.artistName}}</view>
+    <view class="playcount">
+        <image class="icon" src="/images/p0.png"></image>
+        {{tools.playcount(data.playCount)}}
+    </view>
+</view>
+
+

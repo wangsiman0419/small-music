@@ -1,0 +1,27 @@
+/* pages/dish-more/dish-more.wxss */
+.album-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.album{
+    width: 220rpx;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30rpx;
+}
+.album image{
+    width: 220rpx;
+    height: 200rpx;
+    border-radius: 30rpx;
+}
+.album text{
+    font-size: 25rpx;
+}
+.top{
+    font-size: 45rpx;
+    color: #c20c0c;
+    text-align: center;
+    font-weight: bold;
+    margin: 30rpx 0;
+}

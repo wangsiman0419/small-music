@@ -1,0 +1,9 @@
+<!--pages/dish-more/dish-more.wxml-->
+<view class="top">新碟列表</view>
+<view class="album-box">
+    <view class="album" wx:for="{{albums}}" wx:key="item.id">
+        <image src="{{item.picUrl}}" data-id="{{item.id}}"  bind:tap="handleClick"></image>
+        <text>{{item.artist.name}}</text> 
+        <text>{{tools.formats(item.name)}}</text>
+    </view>
+</view>

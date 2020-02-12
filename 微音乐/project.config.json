@@ -1,0 +1,110 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": false,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.9.2",
+	"appid": "wx899da4bdc585785f",
+	"projectname": "%E5%BE%AE%E9%9F%B3%E4%B9%90",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "home",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "music",
+					"pathName": "pages/music/music",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "mv",
+					"pathName": "pages/mv/mv",
+					"query": "id= 10902194",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "mv-detail",
+					"pathName": "pages/mv-detail/mv-detail",
+					"query": "id= 10902194",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "music-detail",
+					"pathName": "pages/music-detail/music-detail",
+					"query": "id= 83679040",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/singerMore/singerMore",
+					"pathName": "pages/singerMore/singerMore",
+					"query": "keywords=以后",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/lists/lists",
+					"pathName": "pages/lists/lists",
+					"scene": null
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,12 @@
+<!--pages/music-play/music-play.wxml-->
+<view class="container">
+    <image class="background-img" src="{{poster}}"></image>
+    <view class="box">
+        <view class="name">{{name}}</view>
+        <view class="author">{{author}}</view>
+        <view  class="moveCircle">
+            <image  class="pic {{isPlay?'running':'paused'}}" src="{{poster}}"></image>
+        </view>
+        <image class="plays" bind:tap="handleClick" src="{{isPlay?'/images/stop.png':'/images/play.png'}}"></image>
+    </view> 
+</view>

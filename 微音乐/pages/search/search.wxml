@@ -1,0 +1,41 @@
+<!--pages/search/search.wxml-->
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+<view>
+    <van-search class="search"
+    value="{{keywords}}"
+    placeholder="音乐/视频/电台/歌手"
+    show-action
+    bind:search="onSearch"
+    bind:cancel="onCancel"
+    bind:focus="onFocus" 
+    bind:blur="leaveFocus"
+  /> 
+ <view class="content">
+     <view class="hot" wx-if="{{isFocus}}">
+          <view><text class="block"></text><text>热门搜索</text></view>
+          <text class="name"  wx:for="{{hots}}" wx:key="item" data-author="{{item.song.artists[0].name}}"
+           bind:tap="handleClick" data-id="{{item.id}}" data-name="{{item.name}}">
+           {{item.name}}
+        </text>
+     </view>
+ </view>
+  <view class="list-box" wx-if="{{!isFocus}}">
+         <text>搜索"{{keywords}}",找到的单曲列表</text>
+        <view class="title-list">
+            <text class="num"></text>
+            <text class="music-title">单曲</text>
+            <text class="singer">歌手</text>
+            <text class="time">时长</text>
+        </view>  
+        <view class="list" wx:for="{{songs}}" wx:key="item.id">
+        <view class="{{index%2==0?'active':''}}">
+            <image class="play-icon"  bind:tap="handlePlay"  data-id="{{item.id}}" 
+            data-name="{{item.name}}" data-author="{{item.artists[0].name}}"
+            src="{{isPlay && playId==item.id?'/images/stop.png':'/images/play.png'}}" ></image>
+            <text class="head-title head">{{tools.formats(item.name)}}</text>
+            <text class="head-singer head">{{item.artists[0].name}}</text>
+            <text class="times-title times">{{tools.formatTime(item.duration)}}</text>
+        </view>
+    </view>
+</view>
+</view>

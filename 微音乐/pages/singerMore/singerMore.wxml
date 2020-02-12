@@ -1,0 +1,13 @@
+<!--pages/singerMore/singerMore.wxml-->
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+<view class="top">热门歌手</view>
+<view class="artist-box">
+    <view class="artist" wx:for="{{artists}}" wx:key="item.id">
+            <image src="{{item.picUrl}}" data-id="{{item.id}}" data-name="{{item.name}}"
+            data-pic="{{item.picUrl}}" bind:tap="handleClick"></image>
+           <view class="foot">
+                <text>{{item.name}}</text>
+                <image src="/images/person-icon.png"></image>
+           </view>
+        </view>
+</view>

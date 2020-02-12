@@ -1,0 +1,86 @@
+/* pages/singerSongs/singerSongs.wxss */
+.title-list{
+    height: 80rpx;
+    width: 100%;
+    background: #F5F5F5;
+    color: rgb(65, 64, 64);
+    font-size: 32rpx;
+    border-bottom:2px solid rgb(212, 212, 212);
+}
+.title-list .num{
+    display: inline-block;
+    width: 115rpx;
+    line-height: 40rpx;
+}
+.title-list .music-title{
+    display: inline-block;
+    width: 240rpx;
+    height: 80rpx;
+    border-left: 1px solid rgb(209, 209, 209);
+    border-right: 1px solid rgb(209, 209, 209);
+    line-height:80rpx;
+    padding-left: 10rpx;
+}
+.singer{
+    display: inline-block;
+    width: 190rpx;
+    height: 80rpx;
+    line-height:80rpx;
+    padding-left: 10rpx;
+    border-left: 1px solid rgb(209, 209, 209);
+}
+.time{
+    display: inline-block;
+    width: 100rpx;
+    height: 80rpx;
+    line-height:80rpx;
+    padding-left: 10rpx;
+}
+
+.times{
+   color: rgb(44, 43, 43);
+}
+.num-title{
+    width: 100rpx;
+    padding-left: 10rpx;
+    display: inline-block;
+}
+.head-title{
+    display: inline-block;
+    width: 240rpx;
+    padding-left: 20rpx;
+}
+.head-singer{
+    display: inline-block;
+    width: 180rpx;
+    margin-left: 50rpx;
+}
+.list{
+    font-size: 28rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    position: relative;
+}
+.times-title{
+    display: inline-block;
+    margin-left: 15rpx;
+}
+.play-icon{
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    top: 15rpx;
+    left: 50rpx;
+}
+.active{
+    background: rgb(240, 240, 240);
+}
+.top .name{
+    font-size: 20px;
+    padding-left: 250rpx;
+    font-weight: bold;
+}
+.top .bg{
+    width: 100%;
+    height: 400rpx;
+}

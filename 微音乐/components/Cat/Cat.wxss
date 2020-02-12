@@ -1,0 +1,17 @@
+/* components/Cat/Cat.wxss */
+.list{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20rpx;
+  }
+  image{
+    width:180rpx;
+    height: 240rpx;
+  }
+  text{
+    font-size: 30rpx;
+    width: 185rpx; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
