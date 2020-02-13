@@ -11,7 +11,7 @@
 </view>
 <swiper  indicator-dots="{{indicatorDots}}" indicator-color="{{indicatorColor}}"
 indicator-active-color="{{active}}" autoplay="{{autoplay}}" >
-    <swiper-item wx:for="{{banners}}" wx:key="item" >
+    <swiper-item wx:for="{{banners}}" wx:key="item.id" >
         <image class="banner-img" src="{{item.imageUrl}}"></image>
     </swiper-item>
 </swiper>
@@ -53,7 +53,7 @@ indicator-active-color="{{active}}" autoplay="{{autoplay}}" >
         </view>
         <image class="play-icon" 
         src="{{item.song.album.blurPicUrl}}"></image>
-        <text class="head-title head">{{tools.format(item.name)}}</text>
+        <text class="head-title head">{{tools.formats(item.name)}}</text>
         <text class="head-singer head">{{tools.formats(item.song.artists[0].name)}}</text>
         <text class="times-title times">{{tools.formatTime(item.song.duration)}}</text>
     </view>

@@ -1,1 +1,157 @@
 /* pages/my/my.wxss */
+.header{
+    display: flex;
+    margin-top: 10px;
+}
+.person{
+    width: 100px;
+    height: 130px;
+    border: 1px solid #999;
+    margin: 0 10px;
+    padding: 5px;
+}
+.user{
+    font-weight: bold;
+}
+.content text{
+    margin-left: 30px;
+}
+.right-users{
+    width: 180px;
+    border-bottom: 1px solid #999;
+    padding-bottom: 10px;
+}
+.right-users text{
+    margin-right: 10px;
+}
+.lv{
+    border: 1px solid #c20c0c;
+    border-radius: 15px;
+    padding-left: 10px;
+    width: 40px;
+    display: inline-block;
+    color: #c20c0c;
+    font-weight: bold;
+}
+.right-more{
+    display: flex;
+
+}
+.right-more view{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+    padding-top: 5px;
+}
+.right-more view:not(:nth-child(3)){
+    border-right: 1px solid #999;
+}
+.right-more view:not(:nth-child(1)){
+   padding-left: 10px;
+}
+.city{
+    padding: 10px 0;
+}
+.word{
+    font-size: 30rpx;
+}
+.rank{
+    font-size: 25px;
+    border-right: 1px solid #999;
+    padding-right: 5px;
+}
+.sum-title{
+    border-bottom: 2px solid #c20c0c;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+.times{
+    margin-left: 90rpx;
+    font-size: 35rpx;
+}
+.sum{
+    font-size: 30rpx;
+    margin-left: 20rpx;
+}
+.list{
+    font-size: 28rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    position: relative;
+}
+.songs-name{
+    margin-left: 80rpx;
+}
+.play-icon{
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    top: 15rpx;
+    left: 50rpx;
+}
+.active{
+    background: rgb(240, 240, 240);
+}
+.rank .name{
+    font-size: 20px;
+    padding-left: 250rpx;
+    font-weight: bold;
+}
+.rank .bg{
+    width: 100%;
+    height: 400rpx;
+}
+.songs-num{
+    width: 20rpx;
+    display: inline-block;
+}
+.head{
+    position: absolute;
+    right: 100rpx;
+}
+.actived{
+    background-color: #c20c0c;
+}
+.actives{
+    background: #fff;
+}
+.like{
+    width: 320rpx;
+    height: 320rpx;
+    border: 1px solid #999;
+    position: relative;
+    
+}
+.create-bg{
+    width: 320rpx;
+    height: 320rpx;
+}
+.create-play{
+    position: absolute;
+    bottom: 0rpx;
+    left: 0rpx;
+    height: 60rpx;
+    width: 320rpx;
+    background: rgb(27, 27, 27);
+    opacity: 0.6;
+    line-height: 60rpx;
+    color: #fff;
+    border-top:1px solid #000;
+    border-bottom: 1px solid #000;
+}
+.music-logo{
+    width: 40rpx;
+    height: 40rpx;
+    margin-top: 10rpx;
+}
+.music-logo:last-child{
+    margin-left: 170rpx;
+}
+.create-list{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30rpx;
+}
+.create-title{
+    font-size: 30rpx;
+}

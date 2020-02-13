@@ -102,6 +102,20 @@
 					"id": -1,
 					"name": "pages/lists/lists",
 					"pathName": "pages/lists/lists",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/my/my",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/create-list/create-list",
+					"pathName": "pages/create-list/create-list",
 					"scene": null
 				}
 			]

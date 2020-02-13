@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-list":"/components/List/List"
+  }
+}

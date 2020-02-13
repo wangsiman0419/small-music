@@ -1,0 +1,141 @@
+/* pages/create-music/create-music.wxss */
+.top{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20rpx;
+}
+.top-box .bg{
+    width: 280rpx;
+    height: 320rpx;
+    margin-top: 5rpx;
+}
+.top-box{
+    display: flex;
+    margin:30rpx 10rpx;
+}
+.logo{
+    width: 100rpx;
+    height: 60rpx;
+}
+.title{
+    display: flex;
+}
+.pic{
+    width: 290rpx;
+    height: 330rpx;
+    border: 1px solid rgb(196, 193, 193);
+    text-align: center;
+}
+.top .description{
+    font-size: 32rpx;
+    color: rgb(70, 68, 68);
+}
+.label{
+    color: rgb(70, 68, 68);
+    font-size: 25rpx;
+    margin-top: 30rpx;
+    margin-bottom: 10rpx;
+    line-height: 100rpx;
+    height: 100rpx;
+    display: flex;
+}
+.author{
+    color: #0c73c2;
+    margin-right: 5rpx;
+}
+.title-list{
+    height: 80rpx;
+    width: 100%;
+    background: #F5F5F5;
+    color: rgb(65, 64, 64);
+    font-size: 32rpx;
+    border-bottom:2px solid rgb(212, 212, 212);
+}
+.title-list .num{
+    display: inline-block;
+    width: 80rpx;
+    line-height: 40rpx;
+}
+.title-list .music-title{
+    display: inline-block;
+    width: 240rpx;
+    height: 80rpx;
+    border-left: 1px solid rgb(209, 209, 209);
+    border-right: 1px solid rgb(209, 209, 209);
+    line-height:80rpx;
+    padding-left: 10rpx;
+}
+.time,.singer{
+    display: inline-block;
+    width: 180rpx;
+    height: 80rpx;
+    line-height:80rpx;
+    padding-left: 10rpx;
+}
+.time{
+    border-left: 1px solid rgb(209, 209, 209);
+}
+.times{
+   color: rgb(44, 43, 43);
+}
+.num-title{
+    width: 80rpx;
+    padding-left: 10rpx;
+    display: inline-block;
+}
+.head-title{
+    display: inline-block;
+    width: 240rpx;
+    padding-left: 10rpx;
+}
+.head-singer{
+    display: inline-block;
+    width: 180rpx;
+    padding-left: 10rpx;
+}
+.list{
+    font-size: 28rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    position: relative;
+}
+.times-title{
+    display: inline-block;
+    margin-left: 10rpx;
+}
+.play-icon{
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    top: 15rpx;
+    right: 30rpx;
+}
+.active{
+    background: rgb(240, 240, 240);
+}
+.name{
+    font-size: 35rpx;
+    font-weight: bold;
+}
+
+.person-logo{
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.num{
+    color: #c20c0c;
+    font-size: 30rpx;
+}
+.music-num{
+    margin-left: 40rpx;
+    font-size: 30rpx;
+    color: #333;
+}
+.play{
+    margin-left: 200rpx;
+    font-size: 30rpx;
+}
+.plays{
+    font-size: 30rpx;
+}

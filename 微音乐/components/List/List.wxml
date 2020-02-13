@@ -1,0 +1,13 @@
+<!--components/List/List.wxml-->
+<view class="list">
+    <view class="{{index%2==1?'active':''}}">
+        <text class="num-title times">{{index+1}}</text>
+        <text class="head-title head">{{data.name}}</text>
+        <text class="head-singer head">{{data.author}}</text>
+        <text class="times-title times">{{data.duration}}</text>
+        <image class="play-icon" bind:tap="handleClick"
+         data-poster="{{data.img}}"
+        src="{{isPlay && playId==item.id?'/images/stop.png':'/images/play.png'}}"></image>
+    </view>
+</view>
+

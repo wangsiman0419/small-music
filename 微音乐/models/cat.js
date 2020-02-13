@@ -1,4 +1,4 @@
-var baseUrl="https://music.aityp.com/";
+var baseUrl="http://localhost:3000/";
 function http({url,data}){
     return new Promise((resolve,reject)=>{
         wx.request({

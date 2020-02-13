@@ -35,6 +35,7 @@ Page({
     })
   },
   handlePlay: function(e){
+    console.log(e)
     var {id,name,author}=e.currentTarget.dataset;
       wx.navigateTo({
         url: '/pages/search-play/search-play?id='+id+'&name='+name+'&author='+author,

@@ -1,0 +1,71 @@
+/* components/List/List.wxss */
+.title-list{
+    height: 80rpx;
+    width: 100%;
+    background: #F5F5F5;
+    color: rgb(65, 64, 64);
+    font-size: 32rpx;
+    border-bottom:2px solid rgb(212, 212, 212);
+}
+.title-list .num{
+    display: inline-block;
+    width: 80rpx;
+    line-height: 40rpx;
+}
+.title-list .music-title{
+    display: inline-block;
+    width: 240rpx;
+    height: 80rpx;
+    border-left: 1px solid rgb(209, 209, 209);
+    border-right: 1px solid rgb(209, 209, 209);
+    line-height:80rpx;
+    padding-left: 10rpx;
+}
+.time,.singer{
+    display: inline-block;
+    width: 180rpx;
+    height: 80rpx;
+    line-height:80rpx;
+    padding-left: 10rpx;
+}
+.time{
+    border-left: 1px solid rgb(209, 209, 209);
+}
+.times{
+   color: rgb(44, 43, 43);
+}
+.num-title{
+    width: 80rpx;
+    padding-left: 10rpx;
+    display: inline-block;
+}
+.head-title{
+    display: inline-block;
+    width: 240rpx;
+    padding-left: 10rpx;
+}
+.head-singer{
+    display: inline-block;
+    width: 180rpx;
+    padding-left: 10rpx;
+}
+.list{
+    font-size: 28rpx;
+    height: 70rpx;
+    line-height: 70rpx;
+    position: relative;
+}
+.times-title{
+    display: inline-block;
+    margin-left: 10rpx;
+}
+.play-icon{
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    top: 15rpx;
+    right: 30rpx;
+}
+.active{
+    background: rgb(240, 240, 240);
+}

@@ -49,6 +49,7 @@
     position: relative;
 }
 .dj-wrap {
+    width: 106px;
     position: absolute;
     top: 30rpx;
     left:0rpx;

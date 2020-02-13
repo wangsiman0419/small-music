@@ -1,0 +1,33 @@
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+<view class="top-box">
+    <view class="pic">
+        <image class="bg" src="http://p4.music.126.net/wfkDFp0g_Tp4w69kdWGeXw==/2946691201785950.jpg?param=200y200"></image>
+    </view>
+    <view class="top">
+        <view class="title">
+            <image class="logo" src="/images/music-list.png"></image>
+            <text class="name">曼阿1801喜欢的音乐</text>
+        </view>
+        <view class="label">
+           <image class="person-logo" src="../../images/person.jpg" ></image>
+           <text class="author">曼阿1801 </text>
+           <text>2018-01-02 创建</text>
+        </view>
+    </view> 
+</view>
+<view class="list-box">
+    <view>
+        <text>播放列表</text>
+        <text class="music-num">30首歌</text>
+        <text class="play">播放：</text>
+        <text class="num">71</text>
+        <text class="plays">次</text>
+    </view>
+    <view class="title-list">
+        <text class="num"></text>
+        <text class="music-title">歌曲标题</text>
+        <text class="singer">歌手</text>
+        <text class="time">时长</text>
+    </view>
+    <v-list wx:for="{{songs}}" wx:key="item.id" data="{{item}}" index="{{index}}"></v-list>
+</view>

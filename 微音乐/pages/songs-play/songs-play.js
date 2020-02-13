@@ -1,11 +1,9 @@
 // pages/music-play/music-play.js
 const http=require('../../models/http')
-const https=require('../../models/http')
 const audio=wx.getBackgroundAudioManager();
 Page({
   data: {
-     lyric:"",
-     isPlay:true,
+     isPlay:false,
   },
   onLoad:async function (options) {
      var id=options.id;
@@ -16,17 +14,11 @@ Page({
      audio.title=name;
      audio.src=url;
      var poster=wx.getStorageSync('poster');
-     audio.picUrl=poster;
+     audio.pic=poster;
      this.setData({
        name,
        poster,
        author
-     })
-     //歌词
-     var play=await https.MusicPlay(id);
-     var lyric=play.data.lyric;
-     this.setData({
-         lyric,
      })
      //获取缓存
      wx.setStorageSync('playState', true)

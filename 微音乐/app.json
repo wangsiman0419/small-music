@@ -16,7 +16,10 @@
     "pages/music-play/music-play",
     "pages/search/search",
     "pages/singerSongs/singerSongs",
-    "pages/singerMore/singerMore"
+    "pages/singerMore/singerMore",
+    "pages/songs-play/songs-play",
+    "pages/create-list/create-list",
+    "pages/create-music/create-music"
   ],
   "requiredBackgroundModes": ["audio", "location"],
   "window": {

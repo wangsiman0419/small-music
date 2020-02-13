@@ -1,2 +1,81 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view>
+    <view class="header">
+        <image class="person" src="{{imageURL}}" bind:tap="handleImage">
+        </image>
+        <view class="right" >
+            <view class="right-users">
+                <text class="user">曼阿1801</text>
+                <text class="lv">Lv.7</text>
+            </view>
+            <view class="right-more">
+                <view>
+                    <text>0</text>
+                    <text class="word">动态</text>
+                </view>
+                <view>
+                    <text>6</text>
+                    <text class="word">关注</text>
+                </view>
+                <view>
+                    <text>20</text>
+                    <text class="word">粉丝</text>
+                </view>
+            </view> 
+            <view class="city word">所在地区：湖北省-武汉市</view>
+            <view class="word">社交网络：WeChat</view>
+        </view>
+    </view>
+    <view class="music-rank">
+        <view class="sum-title">
+            <text class="rank">听歌排行</text>
+            <text class="sum">累积听歌2249首</text>
+            <text class="times">最近一周</text>
+        </view>
+        <view>
+            <view class="list" wx:for="{{songs}}" wx:key="item.id">
+                <view class="{{index%2==1?'active':''}}">
+                    <text class="songs-num">{{index+1}}.</text>
+                    <image  class="play-icon {{isPlay?'actives':'actived'}}" bind:tap="handleClick" data-id="{{item.id}}" 
+                     data-name="{{item.name}}" data-poster="{{item.img}}" data-author="{{item.author}}"
+                    src="{{isPlay && playId==item.id?'/images/stop.png':'/images/play.png'}}" ></image>
+                    <text class="songs-name">{{item.name}}--</text>
+                    <text class="author">{{item.author}}</text>
+                    <text class="head">{{item.frequency}}</text>
+                </view>
+            </view>    
+        </view>
+    </view>
+    <view class="music-create">
+        <view class="sum-title">
+            <text class="top">我创建的歌单(2)</text>
+        </view>
+        <view class="create-list">
+            <view class="music">
+                <view class="like" bind:tap="handleList">
+                    <image class="create-bg" src="http://p3.music.126.net/wfkDFp0g_Tp4w69kdWGeXw==/2946691201785950.jpg?param=200y200">
+                    </image>
+                    <view class="create-play">
+                        <image class="music-logo" src="../../images/p0.png"></image>
+                        <text class="">71</text>
+                        <image class="music-logo" src="../../images/icon_play.png" > </image>
+                    </view>
+                    <text class="create-title">曼阿1801喜欢的音乐</text>
+                </view> 
+            </view>
+            <view>
+                <view class="like" bind:tap="handleLists">
+                    <image class="create-bg" src="http://p4.music.126.net/Hrckg2IfeAV34N4UAZctRg==/109951163604902705.jpg?param=200y200">
+                    </image>
+                    <view class="create-play">
+                        <image class="music-logo" src="../../images/p0.png"></image>
+                        <text class="">11</text>
+                        <image class="music-logo" src="../../images/icon_play.png" > </image>
+                    </view>
+                    <text class="create-title">歌曲</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+

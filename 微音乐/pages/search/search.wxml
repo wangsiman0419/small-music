@@ -30,7 +30,7 @@
         <view class="list" wx:for="{{songs}}" wx:key="item.id">
         <view class="{{index%2==0?'active':''}}">
             <image class="play-icon"  bind:tap="handlePlay"  data-id="{{item.id}}" 
-            data-name="{{item.name}}" data-author="{{item.artists[0].name}}"
+            data-name="{{item.name}}" data-author="{{item.artists[0].name}}" 
             src="{{isPlay && playId==item.id?'/images/stop.png':'/images/play.png'}}" ></image>
             <text class="head-title head">{{tools.formats(item.name)}}</text>
             <text class="head-singer head">{{item.artists[0].name}}</text>
